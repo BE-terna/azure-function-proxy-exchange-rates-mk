@@ -1,0 +1,11 @@
+{
+    "$schema": "http://json.schemastore.org/proxies",
+    "proxies": {
+        "mbrm.mk": {
+            "matchCondition": {
+                "route": "klservice/kurs.asmx"
+            },
+            "backendUri": "https://www.nbrm.mk/klservice/kurs.asmx"
+        }
+    }
+}
