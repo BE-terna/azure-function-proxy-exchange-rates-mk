@@ -1,0 +1,1 @@
+# azure-function-proxy-exchange-rates-mk
