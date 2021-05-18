@@ -163,13 +163,14 @@
         {
             "type": "Microsoft.Web/sites/sourcecontrols",
             "apiVersion": "2018-11-01",
-            "name": "[concat(parameters('SiteName'), '/SourceControl')]",
+            "name": "[concat(parameters('SiteName'), '/web')]",
             "dependsOn": [
                 "[resourceId('Microsoft.Web/sites', parameters('SiteName'))]"
             ],
             "properties": {
-              "repoUrl": "https://github.com/BE-terna/azure-function-proxy-exchange-rates-mk",
-              "branch": "main"
+                "repoUrl": "https://github.com/BE-terna/azure-function-proxy-exchange-rates-mk.git",
+                "branch": "main",
+                "isManualIntegration": true
             }
         }
     ]
